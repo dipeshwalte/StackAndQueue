@@ -26,6 +26,14 @@ namespace StackAndQueue
                 Console.WriteLine("No values to display");
                 return;
             }
+            Console.WriteLine("Top -> "+temp.data );
+            temp = temp.next;
+            while (temp != null)
+            {
+                Console.WriteLine("       "+temp.data);
+                temp = temp.next;
+            }
+            Console.WriteLine();
 
         }
         public void Pop()
@@ -36,21 +44,30 @@ namespace StackAndQueue
                 return;
             }
             Console.WriteLine("The element to be popped is " + top.data);
-
+            top = top.next;
         }
 
         public void Peek()
         {
             if (this.top == null)
             {
-                Console.WriteLine("No element is present to pop");
+                Console.WriteLine("No element is present to peek");
                 return;
             }
+            Console.WriteLine("Peeked Element is :" + top.data);
         }
 
-        public void IsEmpty()
+        public void peekAndPopTillEmpty()
         {
-
+            while (top != null)
+            {
+                this.Peek();
+                this.Pop();
+                Console.WriteLine("-----------------");
+                Console.WriteLine("Displaying stack:");
+                this.Display();
+                Console.WriteLine("-----------------");
+            }
 
 
         }
