@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 commitMessage="[Dipesh] modify AddedPushLogic"
-currentBranchName="UC1PushLogic"
-newBranchName="UC2PeekAndPopLogic"
+currentBranchName="UC2PeekAndPopLogic"
+newBranchName="UC3Enqueue"
 echo --------git status---------
 echo
 git status
