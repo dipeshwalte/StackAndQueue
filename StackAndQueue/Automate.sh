@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
-commitMessage="[Dipesh] modify AddedPushLogic"
-currentBranchName="UC2PeekAndPopLogic"
-newBranchName="UC3Enqueue"
+commitMessage="[Dipesh] modify AddedEnqueueLogic"
+currentBranchName="UC3Enqueue"
+newBranchName="UC3Dequeue"
 echo --------git status---------
 echo
 git status
